@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - WealthMastery</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                            950: '#042f2e',
+                        },
+                        dark: {
+                            bg: '#0f172a',
+                            paper: '#1e293b',
+                            border: '#334155'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+             .glass-dark {
+                @apply bg-black/40 backdrop-blur-lg border border-white/10;
+            }
+        }
+         body {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="glass-dark border-b border-white/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <div class="flex-shrink-0 flex items-center gap-2">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-400 to-blue-500 flex items-center justify-center">
+                            <i class="fa-solid fa-rocket text-white text-xl"></i>
+                        </div>
+                        <span class="font-display font-bold text-2xl tracking-tight text-white">Wealth<span
+                                class="text-brand-400">Mastery</span></span>
+                    </div>
+
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-8">
+                            <a href="index.html"
+                                class="text-gray-300 hover:text-white hover:border-brand-400 border-b-2 border-transparent px-3 py-2 transition-all">Home</a>
+                            <a href="methods.html"
+                                class="text-gray-300 hover:text-white hover:border-brand-400 border-b-2 border-transparent px-3 py-2 transition-all">Methods</a>
+                            <a href="resources.html"
+                                class="text-brand-300 font-medium px-3 py-2 border-b-2 border-brand-400 transition-colors">Resources</a>
+                            <a href="contact.html"
+                                class="text-gray-300 hover:text-white hover:border-brand-400 border-b-2 border-transparent px-3 py-2 transition-all">Contact</a>
+                        </div>
+                    </div>
+                    <div class="-mr-2 flex md:hidden">
+                        <button type="button" id="mobile-menu-btn"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                            <i class="fa-solid fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden glass-dark border-b border-white/10" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="methods.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Methods</a>
+                <a href="resources.html"
+                    class="text-brand-400 block px-3 py-2 rounded-md text-base font-medium">Resources</a>
+                <a href="contact.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl lg:text-5xl font-display font-bold text-white mb-6">Tools for Success</h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">The best software and platforms to help you manage and
+                grow your online business.</p>
+        </div>
+    </header>
+
+    <!-- Resources List -->
+    <section class="py-12 bg-dark-bg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Category: Productivity -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-display font-bold text-brand-400 mb-6 flex items-center gap-3">
+                    <i class="fa-solid fa-bolt"></i> Productivity & Management
+                </h2>
+                <div class="space-y-4">
+                    <!-- Item -->
+                    <div
+                        class="bg-dark-paper p-6 rounded-xl border border-white/5 flex items-center justify-between hover:border-brand-500/30 transition-all group">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-black font-bold text-xl">
+                                N</div>
+                            <div>
+                                <h3 class="text-white font-bold group-hover:text-brand-300 transition-colors">Notion
+                                </h3>
+                                <p class="text-gray-400 text-sm">All-in-one workspace for notes, tasks, and wikis.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <!-- Item -->
+                    <div
+                        class="bg-dark-paper p-6 rounded-xl border border-white/5 flex items-center justify-between hover:border-brand-500/30 transition-all group">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                                T</div>
+                            <div>
+                                <h3 class="text-white font-bold group-hover:text-brand-300 transition-colors">Trello
+                                </h3>
+                                <p class="text-gray-400 text-sm">Visual project management tool.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Design -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-display font-bold text-brand-400 mb-6 flex items-center gap-3">
+                    <i class="fa-solid fa-pen-nib"></i> Design & Creative
+                </h2>
+                <div class="space-y-4">
+                    <!-- Item -->
+                    <div
+                        class="bg-dark-paper p-6 rounded-xl border border-white/5 flex items-center justify-between hover:border-brand-500/30 transition-all group">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                                C</div>
+                            <div>
+                                <h3 class="text-white font-bold group-hover:text-brand-300 transition-colors">Canva</h3>
+                                <p class="text-gray-400 text-sm">Create beautiful designs for social media and web.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <!-- Item -->
+                    <div
+                        class="bg-dark-paper p-6 rounded-xl border border-white/5 flex items-center justify-between hover:border-brand-500/30 transition-all group">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-black border border-white/20 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                                F</div>
+                            <div>
+                                <h3 class="text-white font-bold group-hover:text-brand-300 transition-colors">Figma</h3>
+                                <p class="text-gray-400 text-sm">Collaborative interface design tool.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer same as index -->
+    <footer class="bg-dark-bg border-t border-white/5 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-white/5 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 WealthMastery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
